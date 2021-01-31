@@ -266,7 +266,7 @@ function getSelectedSdpSemantics(){
 ///////////////////////////////////////////////////////////////////////////////
 function connect()
 {
-  signaling_server = new WebSocket("http://35.225.59.214:3000");
+  signaling_server = new WebSocket("wss://35.225.59.214");
   if(isCaller)
   {
     call_token = "#" + token;
