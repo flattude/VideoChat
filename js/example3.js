@@ -266,7 +266,7 @@ function getSelectedSdpSemantics(){
 ///////////////////////////////////////////////////////////////////////////////
 function connect()
 {
-  signaling_server = new WebSocket("wss://35.225.59.214");
+  signaling_server = new WebSocket("ws://35.225.59.214");
   if(isCaller)
   {
     call_token = "#" + token;
@@ -295,7 +295,7 @@ function connect()
     // get the unique token for this call from location.hash
     call_token = document.location.hash;
 
-    // Signaling 서버가 열리r면 발생할 동작
+    // Signaling 서버가 열리면 발생할 동작
     signaling_server.onopen = function() {
       // 메시지 핸들러를 설정한다
       // setup caller signal handler
