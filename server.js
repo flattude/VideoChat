@@ -24,7 +24,7 @@ var fs = require("fs");     // 파일 모듈
 var websocket = require("websocket").server;  // 웹소켓모듈
 
 // 공통변수
-var port = 3000;
+var port = 6002;
 var webrtc_clients = [];      // 웹 소켓 브라우저 목록 저장
 var webrtc_discussions = {};  //
 
